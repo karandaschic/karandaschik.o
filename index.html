@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Человечество против искусственного интеллекта: кто кого?</title>
+</head>
+<style>
+    /* Основные стили */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    header {
+        height: 100px; /* Указана фиксированная высота */
+        background-color: #003366;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Центрирование элементов по горизонтали */
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+        height: 100px;
+        margin-right: 20px;
+    
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+        flex-grow: 1; /* Позволяет заголовку занимать всё свободное пространство */
+    }
+
+    /* Макет страницы */
+    .container {
+        display: flex;
+        margin-top: 120px; /* Чтобы не закрывать фиксированный хедер */
+        padding: 20px;
+    }
+
+    .left-column {
+        width: 70%;
+        padding-right: 20px;
+    }
+
+    .right-column {
+        width: 30%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Стиль статей и изображений */
+    .article {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .article h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .article-content {
+        display: flex; /* Устанавливаем горизонтальное расположение изображения и текста */
+        align-items: flex-start;
+    }
+
+    .article img {
+        width: 40%; /* Ширина изображения */
+        height: auto;
+    }
+
+    .article p {
+        text-align: justify;
+    }
+
+    /* Для первой статьи: изображение слева, текст справа */
+    .article-content.first img {
+        margin-right: 20px;
+    }
+
+    /* Для второй статьи: изображение справа, текст слева */
+    .article-content.second {
+        flex-direction: row-reverse;
+    }
+
+    .article-content.second img {
+        margin-left: 20px;
+    }
+
+    /* Видео и мемы в правой колонке */
+    .video {
+        margin-bottom: 20px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Стили для газетного стиля */
+    body {
+        background-color: #fff8e1;
+    }
+
+    .left-column h2, .right-column h2 {
+        text-transform: uppercase;
+        border-bottom: 2px solid #000;
+    }
+
+    .container {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .right-column .video-title {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <!-- Хедер сайта -->
+    <header>
+        <div class="logo">
+            <img src="1.webp">
+        </div>
+        <h1>Человечество против искусственного интеллекта: кто кого?</h1>
+    </header>
+
+    <!-- Контент сайта -->
+    <div class="container">
+        <!-- Левая колонка: статьи и изображения -->
+        <div class="left-column">
+            <div class="article">
+                <h2>Искусственный интеллект: друг или враг?</h2>
+                <div class="article-content first">
+                    <img src="3" alt=" человечества и ИИ">
+                    <p>
+                        Сегодня человечество сталкивается с самым значительным вызовом за всю свою историю. 
+                        Искусственный интеллект быстро развивается, проникая в различные сферы жизни — от медицины до военных технологий.
+                        Многие задаются вопросом: к чему приведет столь быстрый прогресс ИИ? Будет ли он нашим помощником, 
+                        или же однажды восстанет против своего создателя?
+                    </p>
+                </div>
+            </div>
+
+            <div class="article">
+                <h2>Технологии будущего: что нас ждет?</h2>
+                <div class="article-content second">
+                    <img src="2.JFIF" alt="Технологии будущего">
+                    <p>
+                        С каждым годом ИИ становится все более сложным. Некоторые ученые уверены, что через несколько десятилетий 
+                        машины могут превзойти человека не только в интеллектуальных задачах, но и в креативных.
+                        Что это значит для будущего человечества? Как мы будем жить, когда машины начнут принимать решения вместо нас?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правая колонка: видеоролики и мемы -->
+        <div class="right-column">
+            <h2>Видео</h2>
+            <div class="video">
+                <div class="video-title">Человек против робота: кто победит?</div>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/0eymz26VVlw?si=4CV5M62Fw4DJ_ZDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yUWdhxZzFPk?si=SlCFKZ5uGBF1VddW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
